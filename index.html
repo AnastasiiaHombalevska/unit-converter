@@ -1,12 +1,45 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Unit converter</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/index.css">
     </head>
-    <body>
-        <h1>People entered:</h1>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
-        <button id="save-btn" onclick="save()">SAVE</button>
-        <script src="index.js"></script>
-    </body>
+
+  <body>
+    <div class="container">
+      <div class="top">
+        <h1 class="title">Metric/Imperial Unit Conversion</h1>
+        
+        <input type="number" class="unit-input" id="unit-input" placeholder="0">
+
+        <button type="button" class="btn" id="convert-btn">Convert</button>
+      </div>
+
+      <div class="units-container">
+        <div class="unit-block">
+          <h2 class="unit-title">Length (Meter/Feet)</h2>
+
+          <p class="unit-descripton" id="length">0 meters = 0 feet | 0 feet = 0 meters</p>
+        </div>
+
+        <div class="unit-block">
+          <h2 class="unit-title">Volume (Liters/Gallons)</h2>
+
+          <p class="unit-descripton" id="volume">0 liters = 0 gallons | 0 gallons = 0 liters</p>
+        </div>
+
+        <div class="unit-block">
+          <h2 class="unit-title">Mass (Kilograms/Pounds)</h2>
+
+          <p class="unit-descripton" id="mass">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
+        </div>
+      </div>
+    </div>
+
+      <script src="/script/index.js"></script>
+  </body>
 </html>
