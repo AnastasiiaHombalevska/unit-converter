@@ -28,7 +28,7 @@ function convertData() {
   const literValue = roundValue(value / 0.264);
 
   const poundValue = roundValue(value * 2.204);
-  const kiloValue = roundValue(value * 2.204);
+  const kiloValue = roundValue(value / 2.204);
 
   const result = {
     length: `${value} meters = ${feetValue} feet | ${value} feet = ${meterValue} meters`,
