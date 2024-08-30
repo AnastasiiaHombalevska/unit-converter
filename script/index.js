@@ -16,7 +16,7 @@ function roundValue(value) {
 function convertData() {
   const input = document.getElementById('unit-input');
   const value = parseFloat(input.value);
-  
+
   if (isNaN(value)) {
     return;
   }
@@ -28,20 +28,21 @@ function convertData() {
   const literValue = roundValue(value / 0.264);
 
   const poundValue = roundValue(value * 2.204);
-  const kiloValue = roundValue(value * 2.204);
+  const kiloValue = roundValue(value / 2.204);
 
   const result = {
     length: `${value} meters = ${feetValue} feet | ${value} feet = ${meterValue} meters`,
     volume: `${value} liters = ${gallonValue} gallons | ${value} gallons = ${literValue} liters`,
     mass: `${value} kilos = ${poundValue} pounds | ${value} pounds = ${kiloValue} kilos`
   }
-  
-  const length = document.getElementById('length');
-  length.innerHTML = result.length;
 
-  const volume = document.getElementById('volume');
-  volume.innerHTML = result.volume;
+  const units = ['length', 'volume', 'mass'];
 
-  const mass = document.getElementById('mass');
-  mass.innerHTML = result.mass;
+  for (let i = 0; i < units.length; i++) {
+    const unit = units[i];
+    const element = document.getElementById(unit);
+    element.innerHTML = result[unit];
+  }
+
+  input.value = '';
 }

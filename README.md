@@ -1,4 +1,4 @@
-# Scrimba - Chrome extension leads tracker solution
+# Scrimba - Metric/Imperial Unit Conversion solution
 
 Scrimba helps you improve your coding skills by building realistic projects.
 
@@ -10,9 +10,6 @@ Scrimba helps you improve your coding skills by building realistic projects.
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -20,17 +17,18 @@ Scrimba helps you improve your coding skills by building realistic projects.
 
 Users should be able to:
 
-- Save ....
-
+After entering a number (integer or decimal):
+- pressing the “convert” button will calculate and display its equivalent in another measurement unit
+- pressing “enter” will also calculate and display the result
 
 ### Screenshot
 
-![screenshot]()
+![screenshot](screenshot.png)
 
 ### Links
 
-- Solution URL: [@GitHub]()
-- Live Site URL: [@GitHub]()
+- Solution URL: [@GitHub](https://github.com/AnastasiiaHombalevska/unit-converter)
+- Live Site URL: [@GitHub](https://brilliant-cajeta-6a28eb.netlify.app/)
 
 ## My process
 
@@ -40,19 +38,3 @@ Users should be able to:
 - CSS custom properties
 - CSS Flexbox Layout
 - Mobile-first workflow
-
-### What I learned
-
-With this project I improved a lot my JS skills. The newest things I learnt are:
-
-- How to get the active Chrome tab and store it into localStorage using JSON's methods
-
-```js
-tabBtn.addEventListener("click", function () {
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    myLeads.push(tabs[0].url);
-    localStorage.setItem("myLeads", JSON.stringify(myLeads));
-    render(myLeads);
-  });
-});
-```
