@@ -2,6 +2,8 @@
 
 Scrimba helps you improve your coding skills by building realistic projects.
 
+Initial design [LINK](https://www.figma.com/design/cqtGul0V8RFXY4vTcIv1Kc/Unit-Conversion?node-id=0-1)
+
 ## Table of contents
 
 - [Overview](#overview)
